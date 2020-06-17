@@ -7,7 +7,7 @@ ENV HUGO_BINARY hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
 ENV GLIBC_VERSION 2.27-r0
 
 RUN set -x && \
-  apk add --update wget ca-certificates libstdc++6 git openssh
+  apk add --update wget ca-certificates libstdc++ libstdc++6 git openssh
 
 # Install glibc: This is required for HUGO-extended (including SASS) to work.
 
